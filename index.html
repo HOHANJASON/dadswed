@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自行編輯</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            color: #333;
+            transition: background 0.3s ease-in-out;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            transition: background 0.3s ease-in-out;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            transition: background 0.3s ease-in-out;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .hero {
+            background-image: url('your-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero h1 {
+            font-size: 3em;
+            animation: slideIn 2s ease-out;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .content {
+            padding: 40px 20px;
+        }
+        .content h2 {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+        .content p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        .service {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 300px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff7f50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff4500;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            transition: background 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>自行編輯</h1>
+    </header>
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="services.html">服務項目</a>
+        <a href="contact.html">聯絡我們</a>
+    </nav>
+    <div class="hero">
+        <h1>讓我們幫助您實現目標</h1>
+    </div>
+    <div class="content">
+        <h2>我們的故事</h2>
+        <p>本公司致力於幫助您達成個人和專業目標。我們的專業教練團隊擁有豐富的經驗和專業知識，可以為您提供最優質的服務。</p>
+        <button class="button" onclick="location.href='personal.html'">了解更多</button>
+    </div>
+    <div class="services">
+        <div class="service">
+            <h3>個人問題訪問</h3>
+            <p>關於個人問有任何疑慮...</p>
+            <button class="button" onclick="location.href='personal.html'">了解更多</button>
+        </div>
+        <div class="service">
+            <h3>職業發展</h3>
+            <p>我們的職業發展教練將幫助您提升專業技能，實現職業生涯的飛躍。</p>
+            <button class="button" onclick="location.href='career.html'">了解更多</button>
+        </div>
+        <div class="service">
+            <h3>新的企劃</h3>
+            <p>專案內容 新的企劃 未來裡想</p>
+            <button class="button" onclick="location.href='project.html'">了解更多</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 '公司名' 保留所有權利。</p>
+    </footer>
+</body>
+</html>
